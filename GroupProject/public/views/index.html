@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ajax</title>
+        <meta charset="utf-8"/>
+        <style type="text/css"></style>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    </head>
+    <body>
+         
+        <h1>Planet Trivia</h1>
+
+      <!--Image -->
+        <div>
+        <img id="display" src="public/images/Earth.jpg" alt="" height="380" width="380">
+        </div>
+
+      <!--Hints -->
+        <input id="readButton" type="button" value="Hint" />
+        
+        <form>
+
+        <ul id="aList">   <!-- ordered list (numbered) -->
+
+        </ul>
+
+          <!--
+          <label for="identifier">ID:</label>
+          <input id="identifier" type="number" name="identifier" min="1">
+
+          <label for="name">Hint:</label>
+          <input id="name" type="text" name="name">
+          <input id="createButton" type="button" value="Create" />
+          -->
+
+        <!--Answer -->
+          <div>Answer:</div>
+          <label for="planet">Planet:</label>
+              <select id="planet" name="planet">
+                <option value="Mercury">Mercury</option>
+                <option value="Venus">Venus</option>
+                <option value="Earth">Earth</option>
+                <option value="Mars">Mars</option>
+                <option value="Jupiter">Jupiter</option>
+                <option value="Saturn">Saturn</option>
+                <option value="Uranus">Uranus</option>
+                <option value="Neptune">Neptune</option>
+              </select>
+
+        <input type="button" name="submit" value="Submit" onclick="submitButton()"> 
+        
+        <div>
+
+        <input type="reset" name="reset" value="Next" onclick="getImageRandom();"> 
+
+        <div>
+        </div>
+
+        <ul id="bList">   <!-- ordered list (numbered) -->
+
+        </ul>
+        
+        </form>
+
+        <script src="js/home.js">
+
+        </script>
+        
+    </body>
+</html>
+
+
